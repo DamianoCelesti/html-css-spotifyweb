@@ -4,39 +4,102 @@
     box-sizing: border-box;
 }
 
-
-
-
-/* wrapper */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+/* LAYOUT */
 
 .wrapper {
-    height: calc(100vh - 120px);
-    background-color: red;
+    height: calc(100vh - 100px);
     display: flex;
 }
 
-
-.wrapper nav {
-    width: 200px;
+.wrapper .nav-side {
+    width: 220px;
     height: 100%;
-    background-color: blueviolet;
+    background-color: rgb(0, 0, 0);
 }
 
 
-/* BLOCCO MAIN */
 .wrapper main {
     height: 100%;
-    width: calc(100% - 200px);
+    width: calc(100% - 220px);
     overflow: auto;
-    background-color: green;
+    background-color: rgb(44, 47, 56);
 }
 
-
-
-
-
 .player {
-    height: 120px;
+    height: 100px;
     background-color: lightgrey;
 
 }
+
+/* TESTO */
+
+.grey {
+    color: rgba(211, 211, 211, 0.733);
+    font-weight: bold;
+}
+
+h3 {
+    color: lightgray;
+    font-size: 20px;
+}
+
+/* BARRA SINISTRA */
+
+/* NAV-UP */
+.nav-side {
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+
+.logo {
+    width: 70%;
+    padding-bottom: 20px;
+}
+
+.nav-sito img {
+    width: 30px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+/* PLAYLIST */
+
+.playlist ul {
+    list-style: none;
+}
+
+.playlist ul li {
+    margin-bottom: 15px;
+}
+
+/* NAV-DOWN */
+
+.nav-down img {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.profile img {
+    width: 20px;
+    margin-right: 10px;
+}
+.profile {
+    border-top: solid 1px white;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.user {
+    background-color: rgb(167, 161, 161);
+    border-radius: 50%;
+}
+
+
+
+/* MAIN /*
+
