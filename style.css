@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* wrapper */
+
+.wrapper {
+    height: calc(100vh - 120px);
+    background-color: red;
+    display: flex;
+}
+
+
+.wrapper nav {
+    width: 200px;
+    height: 100%;
+    background-color: blueviolet;
+}
+
+
+/* BLOCCO MAIN */
+.wrapper main {
+    height: 100%;
+    width: calc(100% - 200px);
+    overflow: auto;
+    background-color: green;
+}
+
+
+
+
+
+.player {
+    height: 120px;
+    background-color: lightgrey;
+
+}
