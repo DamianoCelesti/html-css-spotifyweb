@@ -77,6 +77,7 @@ h4 {
 .nav-sito span:hover {
     color: white;
 }
+
 .nav-main li:hover {
     color: white;
 }
@@ -118,10 +119,15 @@ h4 {
     justify-content: space-between;
 }
 
-.logo {
+.logo-grande {
 
     width: 70%;
     padding-bottom: 20px;
+}
+
+.logo-piccolo {
+    width: 30px;
+    display: none;
 }
 
 .nav-sito img {
@@ -156,7 +162,7 @@ h4 {
 /* NAV-DOWN */
 
 .nav-down img {
-    width: 20px;
+    width: 30px;
     margin-right: 10px;
     vertical-align: middle;
 }
@@ -264,3 +270,90 @@ section p {
 
 
 
+/* FOOTER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1500px) {
+    .col {
+        width: calc(100% / 4);
+    }  
+    .row {
+        flex-wrap: wrap;
+    }  
+}
+
+
+@media screen and (max-width: 900px) {
+    .col {
+        width: calc(100% / 2);
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .wrapper .nav-side {
+        width: 60px;
+    }
+    
+    
+    .wrapper main {
+        width: calc(100% - 60px);
+    }
+
+    .logo-grande {
+        display: none;
+    }
+    .logo-piccolo {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .playlist{
+        display: none;
+    }
+    
+      
+    .nav-sito .grey {
+        display: none;
+    }
+    .nav-down .grey {
+        display: none;    
+    }
+    .profile span {
+        display: none;
+    }
+    .profile {
+        border-top: none;
+    }
+    .nav-sito img {
+        margin-right: 0;
+    }
+    .nav-down img {
+        margin-right: 0;
+    }
+    .nav-down {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-up {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
