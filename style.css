@@ -49,6 +49,7 @@ body {
 
 h2 {
     color: white;
+    margin: 20px 0;
 }
 
 h3 {
@@ -56,21 +57,52 @@ h3 {
     font-size: 20px;
 }
 
+h4 {
+    color: white;
+    margin: 10px 0;
+
+}
+
+.sottotitolo {
+    font-size: 12px;
+}
+
+
+/* HOVER TESTO */
+
+.playlist li:hover {
+    color: white;
+}
+
+.nav-sito span:hover {
+    color: white;
+}
+.nav-main li:hover {
+    color: white;
+}
+
 /* BOTTONI */
 
-.bottone{
+.bottone {
     padding: 10px 40px;
+    font-size: 13px;
     border: 1px solid white;
     color: white;
     background-color: transparent;
     border-radius: 9000px;
 }
+.fascia-nera button:hover{
+    padding: 14px 44px;
+    font-size: 15px;
+}
+
 
 /* IMG */
 
 .full {
     max-width: 100%;
 }
+
 .tondo {
     border-radius: 50%;
 }
@@ -83,11 +115,11 @@ h3 {
     padding: 13px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
 .logo {
-    
+
     width: 70%;
     padding-bottom: 20px;
 }
@@ -103,10 +135,15 @@ h3 {
 
 .playlist {
     max-height: calc(100vh - 400px);
-    overflow-y: auto; 
-    padding-right: 5px; 
+    overflow-y: auto;
+    padding-right: 5px;
 }
 
+.playlist i {
+    font-size: 50px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
 
 .playlist ul {
     list-style: none;
@@ -131,6 +168,7 @@ h3 {
     color: aliceblue;
     font-weight: bold;
 }
+
 .user {
     background-color: rgb(167, 161, 161);
     border-radius: 50%;
@@ -152,7 +190,23 @@ h3 {
     z-index: 800;
 }
 
+/* MAIN NAV */
 
+.nav-main {
+    padding-bottom: 35px;
+}
+
+.nav-main ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+
+/* CARDS */
 
 .container-main {
     padding: 10px;
@@ -161,18 +215,24 @@ h3 {
 .row {
     display: flex;
 }
+
 .col {
     width: calc(100% / 6);
     padding: 7px;
-    margin-bottom: 20px;
 }
+
 .col h3 {
     text-align: center;
+    margin-top: 10px;
 }
+
 .col p {
     text-align: center;
 }
 
+section p {
+    margin-bottom: 30px;
+}
 
 .card {
     position: relative;
@@ -193,13 +253,14 @@ h3 {
     left: 0;
     visibility: hidden;
     opacity: 0;
-    
-    
+
+
 }
 
 .card:hover .card-play {
     visibility: visible;
     opacity: 1;
-} 
+}
+
 
 
